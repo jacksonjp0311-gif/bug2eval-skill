@@ -1,0 +1,17 @@
+[package]
+name = "bug2eval"
+version = "0.1.0"
+edition = "2021"
+description = "Rust-first companion binary for Bug2Eval portable agent evals"
+license = "MIT"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+# tar, flate2, zip for full implementation
+
+[[bin]]
+name = "bug2eval"
+path = "src/main.rs"
