@@ -1,0 +1,25 @@
+{
+  "skill": "bug2eval",
+  "test_cases": [
+    {
+      "input": "Capture this fixed bug as a portable eval for agents",
+      "should_trigger": true
+    },
+    {
+      "input": "Turn my last production fix into a Bug2Eval case",
+      "should_trigger": true
+    },
+    {
+      "input": "Solve this .b2e case and make the verifier pass",
+      "should_trigger": true
+    },
+    {
+      "input": "Write a new unit test for the login function",
+      "should_trigger": false
+    },
+    {
+      "input": "Explain what a regression test is",
+      "should_trigger": false
+    }
+  ]
+}
