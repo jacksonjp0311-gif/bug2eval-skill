@@ -1,0 +1,20 @@
+{
+  "skill": "bug2eval",
+  "test_cases": [
+    {
+      "name": "capture_from_git",
+      "input": "I fixed a division-by-zero bug in the calculator. Capture it as a Bug2Eval case from the last two commits.",
+      "assertions": ["Uses bug2eval capture with before-ref and after-ref", "Includes a verifier command", "Validates the case afterward"]
+    },
+    {
+      "name": "validate_existing_case",
+      "input": "Validate the case at .bug2eval/cases/BUG-018 and confirm the before fails and after passes.",
+      "assertions": ["Runs bug2eval validate", "Checks for before_exit != 0 and after_exit == 0", "Reports checksum status"]
+    },
+    {
+      "name": "solve_case_protocol",
+      "input": "Solve this Bug2Eval case. Start from the before workspace and make the smallest fix.",
+      "assertions": ["Starts from workspace_before", "Does not modify verifier or protected files", "Runs the exact verification argv", "Exits 0 only on verifier success"]
+    }
+  ]
+}
